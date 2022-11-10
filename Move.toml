@@ -1,0 +1,17 @@
+[package]
+name = "musetime"
+version = "1.1.0"
+
+[addresses]
+musetime = "0x0"
+
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-framework"
+rev = 'mainnet_aptos-cli-v1.0.0'
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-stdlib/"
+rev = 'mainnet_aptos-cli-v1.0.0'
