@@ -1,17 +1,33 @@
 [package]
-name = "musetime"
-version = "1.1.0"
+name = 'musetime'
+version = '0.1.0'
 
 [addresses]
-musetime = "0x0"
-
+std = '0x1'
+aptos_std = '0x1'
+aptos_framework = '0x1'
+aptos_token = "0x3"
+musetime = '0x40034a19a59ec81325b4d6b727cba5327733e7fff511e74d7350ce2a1ba8ac44'
+okx_test_nft = '0x40034a19a59ec81325b4d6b727cba5327733e7fff511e74d7350ce2a1ba8ac44'
+deployer = '0x40034a19a59ec81325b4d6b727cba5327733e7fff511e74d7350ce2a1ba8ac44'
+royalty = '0x40034a19a59ec81325b4d6b727cba5327733e7fff511e74d7350ce2a1ba8ac44'
 
 [dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-core.git"
-subdir = "aptos-move/framework/aptos-framework"
-rev = 'mainnet_aptos-cli-v1.0.0'
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = '01108a2345b87d539d54a67b32db55193f9ace40' #v1.0.0
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.AptosToken]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = '01108a2345b87d539d54a67b32db55193f9ace40' #v1.0.0
+subdir = 'aptos-move/framework/aptos-token'
 
 [dependencies.AptosStdlib]
-git = "https://github.com/aptos-labs/aptos-core.git"
-subdir = "aptos-move/framework/aptos-stdlib/"
-rev = 'mainnet_aptos-cli-v1.0.0'
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = '01108a2345b87d539d54a67b32db55193f9ace40' #v1.0.0
+subdir = 'aptos-move/framework/aptos-stdlib'
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = '01108a2345b87d539d54a67b32db55193f9ace40' #v1.0.0
+subdir = 'aptos-move/framework/move-stdlib'
