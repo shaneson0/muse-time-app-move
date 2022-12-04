@@ -36,8 +36,6 @@ module musetime::encryption_testing {
         );
         assert!(std::option::is_some(&pk), 1);
         let pksBytes = ecdsa_raw_public_key_to_bytes(& std::option::extract(&mut pk));
-        assert!(pksBytes!= x"4646ae5047316b4230d0086c8acec687f00b1cd9d1dc634f6cb358ac0a9a8ffffe77b4dd0a4bfb95851f3b7355c781dd60f8418fc8a65d14907aff47c903a559", 1);
-
-        
+        assert!(pksBytes!= x"4646ae5047316b4230d0086c8acec687f00b1cd9d1dc634f6cb358ac0a9a8ffffe77b4dd0a4bfb95851f3b7355c781dd60f8418fc8a65d14907aff47c903a559", 1);  
     }
 }
