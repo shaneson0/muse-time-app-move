@@ -38,13 +38,20 @@ module musetime::muse_time_test {
 
         muse_time_controller::init(deployer,&resource_signer);
 
-        let arAddress = x"790ac11183ddE23163b307E3F7440F2460526957";
-        muse_time_controller::mint_nft(user, arAddress);
+
+        // createTimeTroves
+        // muse_time_controller::createTimeTroves
+
+        // mintTimeToken
 
 
-        let token_id = muse_time_controller::get_token_id(user);
-        let balance = token::balance_of(signer::address_of(user), token_id);
-        assert!(balance == 1, E_INVALID_BALANCE);
+
+        // let arAddress = x"790ac11183ddE23163b307E3F7440F2460526957";
+        // muse_time_controller::mint_nft(user, arAddress);
+
+        // let token_id = muse_time_controller::get_token_id(user);
+        // let balance = token::balance_of(signer::address_of(user), token_id);
+        // assert!(balance == 1, E_INVALID_BALANCE);
 
     }
 }
